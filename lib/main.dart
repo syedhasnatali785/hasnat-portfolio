@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/sections/hero_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -32,14 +32,12 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: SafeArea(
-        child: Center(
-          child: const Scaffold(
-            body: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+      home: Center(
+        child: Scaffold(
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
 
-              children: [HeroScreen()],
-            ),
+            children: [HeroScreen()],
           ),
         ),
       ),
